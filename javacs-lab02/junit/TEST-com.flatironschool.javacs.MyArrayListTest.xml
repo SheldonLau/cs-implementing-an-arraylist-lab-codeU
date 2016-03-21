@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="Linux" name="com.flatironschool.javacs.MyArrayListTest" skipped="0" tests="19" time="0.078" timestamp="2016-03-21T07:08:20">
+<testsuite errors="0" failures="0" hostname="Linux" name="com.flatironschool.javacs.MyArrayListTest" skipped="0" tests="19" time="0.078" timestamp="2016-03-21T07:10:34">
   <properties>
     <property name="java.vendor" value="Oracle Corporation" />
     <property name="env.SESSION_MANAGER" value="local/Linux:@/tmp/.ICE-unix/3382,unix/Linux:/tmp/.ICE-unix/3382" />
@@ -97,7 +97,7 @@
     <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
     <property name="ant.version" value="Apache Ant(TM) version 1.9.3 compiled on April 8 2014" />
     <property name="java.class.path" value="/home/sheldon/code/labs/cs-implementing-an-arraylist-lab-codeU/javacs-lab02/bin:/home/sheldon/code/labs/cs-implementing-an-arraylist-lab-codeU/javacs-lab02/lib/junit-4.12.jar:/home/sheldon/code/labs/cs-implementing-an-arraylist-lab-codeU/javacs-lab02/lib/hamcrest-core-1.3.jar:/usr/share/java/ant-launcher-1.9.3.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.flatironschool.javacs.MyArrayListTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/sheldon/code/labs/cs-implementing-an-arraylist-lab-codeU/javacs-lab02/junit/TEST-com.flatironschool.javacs.MyArrayListTest.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter crashfile=/home/sheldon/code/labs/cs-implementing-an-arraylist-lab-codeU/javacs-lab02/junitvmwatcher6672562013661896107.properties propsfile=/home/sheldon/code/labs/cs-implementing-an-arraylist-lab-codeU/javacs-lab02/junit4558088149477854940.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.flatironschool.javacs.MyArrayListTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/sheldon/code/labs/cs-implementing-an-arraylist-lab-codeU/javacs-lab02/junit/TEST-com.flatironschool.javacs.MyArrayListTest.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter crashfile=/home/sheldon/code/labs/cs-implementing-an-arraylist-lab-codeU/javacs-lab02/junitvmwatcher667045957445886467.properties propsfile=/home/sheldon/code/labs/cs-implementing-an-arraylist-lab-codeU/javacs-lab02/junit8064798470448258679.properties" />
     <property name="env.MDM_XSERVER_LOCATION" value="local" />
     <property name="env.XDG_SESSION_ID" value="c1" />
     <property name="ant.file.type.JavaCS" value="file" />
@@ -138,13 +138,13 @@
   <testcase classname="com.flatironschool.javacs.MyArrayListTest" name="testToArray" time="0.005" />
   <testcase classname="com.flatironschool.javacs.MyArrayListTest" name="testAddIntT" time="0.001" />
   <testcase classname="com.flatironschool.javacs.MyArrayListTest" name="testGet" time="0.0" />
-  <testcase classname="com.flatironschool.javacs.MyArrayListTest" name="testSet" time="0.001" />
+  <testcase classname="com.flatironschool.javacs.MyArrayListTest" name="testSet" time="0.0" />
   <testcase classname="com.flatironschool.javacs.MyArrayListTest" name="testAddAllCollectionOfQextendsT" time="0.0" />
   <testcase classname="com.flatironschool.javacs.MyArrayListTest" name="testClear" time="0.0" />
   <testcase classname="com.flatironschool.javacs.MyArrayListTest" name="testAddT" time="0.0" />
   <testcase classname="com.flatironschool.javacs.MyArrayListTest" name="testSize" time="0.0" />
   <testcase classname="com.flatironschool.javacs.MyArrayListTest" name="testLastIndexOf" time="0.0" />
-  <testcase classname="com.flatironschool.javacs.MyArrayListTest" name="testMyArrayList" time="0.0" />
+  <testcase classname="com.flatironschool.javacs.MyArrayListTest" name="testMyArrayList" time="0.001" />
   <testcase classname="com.flatironschool.javacs.MyArrayListTest" name="testContainsAll" time="0.0" />
   <testcase classname="com.flatironschool.javacs.MyArrayListTest" name="testRemoveObject" time="0.0" />
   <testcase classname="com.flatironschool.javacs.MyArrayListTest" name="testContains" time="0.0" />
@@ -152,7 +152,7 @@
   <testcase classname="com.flatironschool.javacs.MyArrayListTest" name="testIsEmpty" time="0.0" />
   <testcase classname="com.flatironschool.javacs.MyArrayListTest" name="testIterator" time="0.001" />
   <testcase classname="com.flatironschool.javacs.MyArrayListTest" name="testRemoveAll" time="0.0" />
-  <testcase classname="com.flatironschool.javacs.MyArrayListTest" name="testRemoveInt" time="0.0" />
+  <testcase classname="com.flatironschool.javacs.MyArrayListTest" name="testRemoveInt" time="0.001" />
   <testcase classname="com.flatironschool.javacs.MyArrayListTest" name="testSubList" time="0.0" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
