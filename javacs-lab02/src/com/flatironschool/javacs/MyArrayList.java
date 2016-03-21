@@ -62,7 +62,23 @@ public class MyArrayList<E> implements List<E> {
 		if (index < 0 || index > size) {
 			throw new IndexOutOfBoundsException();
 		}
-		// TODO: fill in the rest of this method
+		E shiftedElement = element;
+		int i = index;
+		boolean slotIsEmpty = false;
+		while(!slotIsEmpty) {
+			slotIsEmpty = array[i] == null;
+			E elementHolder = array[i];
+			array[i] = shiftedElement;
+			shiftedElement = elementHolder;
+			i++;
+			if(i > array.length) {
+				E[] bigger = (E[]) new Object[array.length * 2];
+				System.arraycopy(array, 0, bigger, 0, array.length);
+				array = bigger;
+			}
+		}
+
+		size++;
 	}
 
 	@Override
@@ -111,8 +127,12 @@ public class MyArrayList<E> implements List<E> {
 
 	@Override
 	public int indexOf(Object target) {
-		// TODO: fill in this method
-		return 0;
+		for(int index = 0; index < size; index++) {
+			if(equals(array[index], target)) {
+				return index;
+			}
+		}
+		return -1;
 	}
 
 	/** Checks whether an element of the array is the target.
@@ -182,8 +202,16 @@ public class MyArrayList<E> implements List<E> {
 
 	@Override
 	public E remove(int index) {
-		// TODO: fill in this method.
-		return null;
+
+		E removedElement = array[index];
+		E elementHolder = array[array.length-1];;
+		for(int i = size - 1; i >= index; i--) {
+			E shiftedElement = array[i];
+			array[i] = elementHolder;
+			elementHolder = shiftedElement;
+		}
+		size--;
+		return removedElement;
 	}
 
 	@Override
@@ -202,8 +230,12 @@ public class MyArrayList<E> implements List<E> {
 
 	@Override
 	public E set(int index, E element) {
-		// TODO: fill in this method.
-		return null;
+		if(index < 0 || index >= size) {
+			throw new IndexOutOfBoundsException();
+		}
+		E replacedElement = array[index];
+		array[index] = element;
+		return replacedElement;
 	}
 
 	@Override
